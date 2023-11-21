@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <title>Page title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <script>
+      var cl = document.querySelector("html").classList;
+      cl.remove("no-js");
+      cl.add("has-js");
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="custom_css/styles/optional/ecl-reset.css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="custom_css/styles/ecl-ec.css" media="screen" />
+    <link rel="stylesheet" href="custom_css/styles/ecl-ec-print.css" media="print" />
+  </head>
+  <body>
+    <header class="ecl-site-header" data-ecl-auto-init="SiteHeader">
+      <div class="ecl-site-header__header">
+        <div class="ecl-site-header__container ecl-container">
+          <div class="ecl-site-header__top" data-ecl-site-header-top="">
+            <a
+              href="https://commission.europa.eu/index_en"
+              class="ecl-link ecl-link--standalone ecl-site-header__logo-link"
+              aria-label="European Commission"
+            >
+              <picture
+                class="ecl-picture ecl-site-header__picture"
+                title="European Commission"
+              >
+                <source
+                  srcset="custom_css/images/logo/positive/logo-ec--en.svg"
+                  media="(min-width: 996px)"
+                />
+                <img
+                  class="ecl-site-header__logo-image"
+                  src="custom_css/images/logo/positive/logo-ec--en.svg"
+                  alt="European Commission logo"
+                />
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="ecl-site-header__banner">
+        <div class="ecl-container">
+          <div class="ecl-site-header__site-name">
+            DIGCLASS: Social Classes in the Digital Age
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="custom_css/scripts/ecl-ec.js"></script>
+    <script>
+      ECL.autoInit();
+    </script>
+  </body>
+</html>
