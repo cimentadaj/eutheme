@@ -25,17 +25,16 @@
 #'   )
 #' }
 #' @seealso \code{\link[shiny]{addResourcePath}}, \code{\link[shiny]{includeHTML}}
-fluidEutheme <- function(...) {
+fluidEuTheme <- function(...) {
   # Add custom CSS and HTML from inst/www/
   shiny::addResourcePath("custom_css", system.file("www", package = "eutheme"))
-  header_html <- shiny::includeHTML(system.file("www/index.html", package = "eutheme"))
+  header_html <- shiny::includeHTML(system.file("www/header.html", package = "eutheme"))
   footer_html <- shiny::includeHTML(system.file("www/footer.html", package = "eutheme"))
 
   shiny.semantic::semanticPage(
     margin = "0px",
     header_html,
-    shiny::div(...),
-    lapply(1:32, function(x) shiny::br()),
+    shiny::div(class = "content", ...),
     footer_html
   )
 }
