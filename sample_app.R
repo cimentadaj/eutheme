@@ -50,3 +50,34 @@ server <- function(input, output) {
 }
 
 shinyApp(ui, server)
+
+## library(shiny)
+
+## shiny::addResourcePath("custom_css", system.file("www", package = "eutheme"))
+## header_html <- shiny::includeHTML(system.file("www/header.html", package = "eutheme"))
+## footer_html <- shiny::includeHTML(system.file("www/footer.html", package = "eutheme"))
+## digclass_html <- shiny::includeHTML(system.file("www/digclass_logo.html", package = "eutheme"))
+
+## ui <- fluidPage(
+##   tags$style(HTML("
+##     .container-fluid {
+##      margin-right: 0px;
+##      margin-left: 0px;
+##      padding-right: 0px;
+##      padding-left: 0px;
+## }")),
+##   header_html,
+##   digclass_html,
+##   shinysurveys::surveyOutput(
+##     df = shinysurveys::teaching_r_questions,
+##     survey_title = "A minimal title",
+##     survey_description = "A minimal description",
+##     theme = "white"
+##   ),
+##   footer_html
+## )
+
+## server <- function(input, output, session) {
+## }
+
+## shiny::shinyApp(ui = ui, server = server)
