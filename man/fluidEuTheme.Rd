@@ -10,29 +10,9 @@ fluidEuTheme(...)
 \item{...}{Arguments passed to \code{\link[shiny]{div}} function.}
 }
 \value{
-A \code{shiny.semantic::semanticPage} object with custom styling.
+A \code{shiny::fluidPage} object with custom styling.
 }
 \description{
 This function extends a Shiny UI by adding custom CSS and HTML from the
 \code{inst/www/} directory of the \code{eutheme} package.
-}
-\examples{
-\dontrun{
-library(shiny)
-library(shiny.semantic)
-
-ui <- fluidEutheme(
-  tabset(
-    tabs = list(
-      list(
-        menu = "Tab 1",
-        content = "hey",
-        id = "first_tab"
-      )
-    )
-  )
-}
-}
-\seealso{
-\code{\link[shiny]{addResourcePath}}, \code{\link[shiny]{includeHTML}}
 }
