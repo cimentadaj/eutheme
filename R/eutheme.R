@@ -23,12 +23,15 @@ fluidEuTheme <- function(...) {
         padding-right: 0px;
         padding-left: 0px;
       }
+      .radioMatrixInput .radio-matrix-buttons-label {
+        width: 80% !important;
+      }
       .my-body {
         display: flex;
         align-items: start; /* Align items to the start (top) of the container */
         flex-direction: column;
         width: 95%; /* Default width for mobile */
-        margin: 0 auto; /* Center the container */
+        margin: 40px auto; /* Center the container */
         font-size: 18px; /* Adjust font size here */
         text-align: left; /* Align text to the left */
       }
@@ -41,10 +44,10 @@ fluidEuTheme <- function(...) {
       /* For computer screens (large screens): min-width 992px */
       @media (min-width: 992px) {
         .my-body {
-          width: 60%;
+          width: 45%;
         }
       }
-  }")),
+      }")),
       header_html,
       digclass_html,
       shiny::div(class = "my-body", ...),
