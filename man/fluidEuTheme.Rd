@@ -4,9 +4,11 @@
 \alias{fluidEuTheme}
 \title{Create a customized Shiny UI with additional CSS and HTML}
 \usage{
-fluidEuTheme(...)
+fluidEuTheme(title, ...)
 }
 \arguments{
+\item{title}{Title of the Shiny App}
+
 \item{...}{Arguments passed to \code{\link[shiny]{div}} function.}
 }
 \value{

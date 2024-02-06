@@ -16,6 +16,7 @@ body {
 
 
 
+
 /*! @ecl/preset-ec - 3.11.1 Built on 2023-11-07T08:20:33.594Z */
 .ecl-icon {
   fill: currentcolor;
@@ -11355,7 +11356,7 @@ body {
   display: flex;
   margin: 0;
   /* This is the argument that controls that the footer is right at the bottom */
-  margin-top: auto;
+  margin-top: 85%;
   padding-bottom: 2rem;
   padding-top: 0.5rem;
 }
@@ -11472,6 +11473,7 @@ body {
 @media (min-width: 996px) {
   .ecl-site-footer {
     padding-top: 0;
+    margin-top: 25%;
   }
   .ecl-site-footer__row {
     grid-gap: 0 2rem;

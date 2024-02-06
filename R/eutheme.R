@@ -3,11 +3,12 @@
 #' This function extends a Shiny UI by adding custom CSS and HTML from the
 #' \code{inst/www/} directory of the \code{eutheme} package.
 #'
+#' @param title Title of the Shiny App
 #' @param ... Arguments passed to \code{\link[shiny]{div}} function.
 #'
 #' @return A \code{shiny::fluidPage} object with custom styling.
 #' @export
-fluidEuTheme <- function(...) {
+fluidEuTheme <- function(title, ...) {
   # Add custom CSS and HTML from inst/www/
   shiny::addResourcePath("custom_css", system.file("www", package = "eutheme"))
   header_html <- shiny::includeHTML(system.file("www/header.html", package = "eutheme"))
@@ -15,6 +16,7 @@ fluidEuTheme <- function(...) {
   digclass_html <- shiny::includeHTML(system.file("www/digclass_logo.html", package = "eutheme"))
 
   shiny::fluidPage(
+    title = title,
     shiny::tags$style(shiny::HTML(
       "
       .container-fluid {
