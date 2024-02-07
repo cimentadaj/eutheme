@@ -11355,8 +11355,6 @@ body {
   color: #fff;
   display: flex;
   margin: 0;
-  /* This is the argument that controls that the footer is right at the bottom */
-  margin-top: 85%;
   padding-bottom: 2rem;
   padding-top: 0.5rem;
 }
@@ -11473,7 +11471,6 @@ body {
 @media (min-width: 996px) {
   .ecl-site-footer {
     padding-top: 0;
-    margin-top: 10%;
   }
   .ecl-site-footer__row {
     grid-gap: 0 2rem;

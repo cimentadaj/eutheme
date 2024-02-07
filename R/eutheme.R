@@ -24,12 +24,15 @@ fluidEuTheme <- function(title, ...) {
         margin-left: 0px;
         padding-right: 0px;
         padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
       }
       .radioMatrixInput .radio-matrix-buttons-label {
         width: 80% !important;
       }
       .my-body {
-        display: flex;
+        flex-grow: 1;
         align-items: start; /* Align items to the start (top) of the container */
         flex-direction: column;
         width: 95%; /* Default width for mobile */
